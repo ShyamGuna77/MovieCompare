@@ -1,0 +1,231 @@
+.tutorial {
+    width: 600px;
+    text-align: center;
+    margin: auto;
+  }
+  
+  figure.image {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+  }
+  
+  figure .image img {
+    width: 128px;
+  }
+  
+  .notification {
+    margin-top: 20px !important;
+  }
+  
+  .results {
+    max-height: 500px;
+    overflow-y: scroll;
+  }
+  
+ 
+.container-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+  .hero {
+    margin-bottom: 20px;
+  }
+  
+  .forms {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .dropdown-item {
+    display: flex;
+    align-items: center;
+    height: 60px;
+  }
+  
+  .dropdown-item img {
+    height: 50px;
+    margin-right: 10px;
+    
+  }
+
+
+  /* General container and layout styles */
+.container {
+  padding: 20px;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  margin: 10px;
+}
+
+.media {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.media-left {
+  margin-right: 20px;
+}
+
+.notification {
+  margin-top: 10px;
+}
+
+/* Image adjustments for mobile responsiveness */
+.media-left .image img {
+  max-width: 150px;
+  height: auto;
+}
+
+/* Adjustments for larger screens */
+@media only screen and (min-width: 1025px) {
+  .columns {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .column {
+    width: 45%; /* Ensure both columns are side by side with proper width */
+  }
+
+  .media-left .image img {
+    max-width: 150px;
+  }
+
+  .media .content h1 {
+    font-size: 2em;
+  }
+
+  .media .content h4 {
+    font-size: 1.5em;
+  }
+
+  .notification .title {
+    font-size: 1.5em;
+  }
+
+  .notification .subtitle {
+    font-size: 1.2em;
+  }
+}
+
+/* Adjustments for medium-sized screens like tablets */
+@media only screen and (max-width: 1024px) {
+  .columns {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .column {
+    width: 45%; /* Keep both columns side by side with slightly smaller width */
+  }
+
+  .media-left .image img {
+    max-width: 120px;
+  }
+
+  .media .content h1 {
+    font-size: 1.8em;
+  }
+
+  .media .content h4 {
+    font-size: 1.3em;
+  }
+
+  .notification .title {
+    font-size: 1.4em;
+  }
+
+  .notification .subtitle {
+    font-size: 1.1em;
+  }
+}
+
+/* Adjustments for smaller screens like large mobile phones */
+@media only screen and (max-width: 768px) {
+  .columns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .column {
+    width: 90%; /* Stack columns on smaller screens */
+  }
+
+  .hero {
+    text-align: center;
+  }
+
+  .media-left .image img {
+    max-width: 100px;
+  }
+
+  .media .content h1 {
+    font-size: 1.5em;
+  }
+
+  .media .content h4 {
+    font-size: 1.2em;
+  }
+
+  .notification .title {
+    font-size: 1.2em;
+  }
+
+  .notification .subtitle {
+    font-size: 1em;
+  }
+}
+
+/* Adjustments for very small screens */
+@media only screen and (max-width: 576px) {
+  .columns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .column {
+    width: 100%; /* Full width on small screens */
+  }
+
+  .media-left .image img {
+    max-width: 80px;
+  }
+
+  .media .content h1 {
+    font-size: 1.2em;
+  }
+
+  .media .content h4 {
+    font-size: 1em;
+  }
+
+  .notification .title {
+    font-size: 1em;
+  }
+
+  .notification .subtitle {
+    font-size: 0.9em;
+  }
+
+  .tutorial {
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+
+
+

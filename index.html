@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <section class="hero is-primary is-bold">
+      <div class="hero-body">
+        <div class="container-1">
+          <h1 class="title">
+            Movie Compare
+            <span class="icon">
+              <i class="fas fa-film"></i>
+            </span>
+          </h1>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <div id="left-autocomplete" class="input-box"></div>
+          <div id="left-summary"></div> <!-- Corrected position -->
+        </div>
+        <div class="column">
+          <div id="right-autocomplete" class="input-box" ></div>
+          <div id="right-summary"></div> <!-- Corrected position -->
+        </div>
+      </div>
+
+      <div class="column is-half notification is-primary tutorial"> <!-- Removed extra space -->
+        <h1 class="title">Search For a Movie on Both Sides</h1>
+        <p class="subtitle">We Will tell You Which is best!</p>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="util.js"></script>
+    <script src="autocomplete.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
